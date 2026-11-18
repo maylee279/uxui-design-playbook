@@ -20,6 +20,52 @@
 @media(max-width:1080px){.hero-layout{grid-template-columns:minmax(0,1fr) minmax(210px,.7fr);gap:18px}.hero{padding:28px}.hero h1{font-size:30px}.hero-visual{padding:12px}}
 @media(max-width:900px){.hero-layout{grid-template-columns:minmax(0,1fr)}.hero-visual{display:none}.hero-copy .sub{max-width:540px}.hero-copy .search{max-width:540px}}
 @media(max-width:500px){.hero{padding:24px 19px}.hero h1{font-size:27px}.hero-copy .search{max-width:100%}}
+
+/* V1.6 color theme support */
+.header-actions{display:flex;align-items:center;gap:17px}
+.theme-toggle{border:1px solid #dce7e1;border-radius:10px;background:#fff;color:#365a4b;display:inline-flex;align-items:center;gap:8px;padding:9px 12px;font-size:12px;font-weight:700;white-space:nowrap}
+.theme-toggle:hover{border-color:#168365;background:#f0f8f3}
+.theme-sun{display:none}
+html[data-theme="dark"]{color-scheme:dark;background:#0d1615;color:#e4eee9}
+html[data-theme="dark"] body{background:#0d1615}
+html[data-theme="dark"] .shell{background:#111c1a;border-color:#293b35}
+html[data-theme="dark"] .top,html[data-theme="dark"] .footer,html[data-theme="dark"] aside{border-color:#2b4038}
+html[data-theme="dark"] .main{background:#111c1a}
+html[data-theme="dark"] .brand,html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] .block strong,html[data-theme="dark"] .review-row strong{color:#e8f1ec}
+html[data-theme="dark"] .smalltop,html[data-theme="dark"] .footer,html[data-theme="dark"] .aside-title,html[data-theme="dark"] .muted{color:#9bac9f}
+html[data-theme="dark"] .nav{color:#a8baaf}
+html[data-theme="dark"] .nav:hover{background:#20352c}
+html[data-theme="dark"] .nav.active{background:#183c30;color:#77d7aa}
+html[data-theme="dark"] .side-note,html[data-theme="dark"] .note{background:#1a2924;color:#c4d6ca}
+html[data-theme="dark"] .note p,html[data-theme="dark"] .sub,html[data-theme="dark"] .block p,html[data-theme="dark"] .block li,html[data-theme="dark"] .review-row p{color:#adbbaf}
+html[data-theme="dark"] .block{border-color:#30443a}
+html[data-theme="dark"] .card,html[data-theme="dark"] .item,html[data-theme="dark"] .review-row{background:#192722;border-color:#32463a;color:#e5f0e8}
+html[data-theme="dark"] .card:hover,html[data-theme="dark"] .item:hover{border-color:#69bc95}
+html[data-theme="dark"] .card strong,html[data-theme="dark"] .item strong{color:#eaf3ed}
+html[data-theme="dark"] .card p,html[data-theme="dark"] .item p,html[data-theme="dark"] .card .source{color:#afc0b3}
+html[data-theme="dark"] .badge-icon,html[data-theme="dark"] .tag.good{background:#204733;color:#83d8a9}
+html[data-theme="dark"] .tag{background:#283931;color:#b9cdbf}
+html[data-theme="dark"] .chip,html[data-theme="dark"] .review-options button,html[data-theme="dark"] .btn.secondary{background:#1c2a25;border-color:#35483d;color:#c2d5c7}
+html[data-theme="dark"] .chip.active,html[data-theme="dark"] .review-options button.selected{background:#1d4834;border-color:#5dbd89;color:#9be3b9}
+html[data-theme="dark"] .field,html[data-theme="dark"] .search{background:#1d2c26;border-color:#3a5143;color:#dcece0}
+html[data-theme="dark"] .field:focus,html[data-theme="dark"] .search:focus-within{border-color:#73c99b}
+html[data-theme="dark"] .search input{color:#e5f3e9}
+html[data-theme="dark"] .search input::placeholder,html[data-theme="dark"] .field::placeholder{color:#94a99a}
+html[data-theme="dark"] .hero{background:linear-gradient(120deg,#104f3e,#176f56)}
+html[data-theme="dark"] .hero h1,html[data-theme="dark"] .hero .sub{color:white}
+html[data-theme="dark"] .hero .search{background:#f5fbf7;border-color:#d6e9dc;color:#416554}
+html[data-theme="dark"] .hero .search input{color:#223e31}
+html[data-theme="dark"] .hero .search input::placeholder{color:#728b7c}
+html[data-theme="dark"] .hero-visual{background:rgba(10,35,26,.34);border-color:rgba(200,255,222,.2)}
+html[data-theme="dark"] .visual-step{background:#203c30;color:#ecfaf1}
+html[data-theme="dark"] .visual-step-icon{background:#315a40;color:#a6ebbc}
+html[data-theme="dark"] .visual-step small{color:#b7d0bd}
+html[data-theme="dark"] .btn{background:#207f5c;color:white}
+html[data-theme="dark"] .theme-toggle{background:#20382d;border-color:#3b624c;color:#a8efc5}
+html[data-theme="dark"] .theme-toggle:hover{background:#294b39}
+html[data-theme="dark"] .theme-moon{display:none}
+html[data-theme="dark"] .theme-sun{display:block}
+@media(max-width:600px){.header-actions{gap:7px}.theme-toggle{padding:9px}.theme-label,.header-actions .smalltop{display:none}}
 </style></head><body>
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
 <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7v14M3 18V5a2 2 0 0 1 2-2h3a4 4 0 0 1 4 4 4 4 0 0 1 4-4h3a2 2 0 0 1 2 2v13a2 2 0 0 0-2-2h-3a4 4 0 0 0-4 4 4 4 0 0 0-4-4H5a2 2 0 0 0-2 2Z"/></symbol>
@@ -38,7 +84,7 @@
 <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
 <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6m-11 5L21 3M21 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></symbol>
 </svg>
-<div class="shell"><header class="top"><div class="brand"><span class="logo"><svg class="icon"><use href="#i-book"/></svg></span>UX/UI Design Playbook</div><span class="smalltop">Thư viện kiến thức UX/UI · V1.5</span></header><div class="layout"><aside id="navigation"></aside><main class="main" id="app"></main></div><footer class="footer"><span>UX/UI Design Playbook · Học tập và thực hành UX/UI</span><span>Nguồn tham khảo: NN/g · IxDF · W3C</span></footer></div>
+<div class="shell"><header class="top"><div class="brand"><span class="logo"><svg class="icon"><use href="#i-book"/></svg></span>UX/UI Design Playbook</div><div class="header-actions"><span class="smalltop">Thư viện kiến thức UX/UI · V1.6</span><button type="button" id="theme-toggle" class="theme-toggle" aria-label="Bật Dark Mode" title="Chuyển giao diện sáng/tối"><svg class="theme-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="19" height="19"><path d="M20.985 12.486A9 9 0 0 1 11.514 3.015 9 9 0 1 0 20.985 12.486Z"/></svg><svg class="theme-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="19" height="19"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><span class="theme-label">Dark Mode</span></button></div></header><div class="layout"><aside id="navigation"></aside><main class="main" id="app"></main></div><footer class="footer"><span>UX/UI Design Playbook · Học tập và thực hành UX/UI</span><span>Nguồn tham khảo: NN/g · IxDF · W3C</span></footer></div>
 <script>
 (function(){
 "use strict";
@@ -94,5 +140,27 @@ document.addEventListener('click',function(e){var x=e.target.closest('[data-page
 document.addEventListener('input',function(e){if(e.target.dataset.proj){state.project[e.target.dataset.proj]=e.target.value;return}if(['home-search','catalog-search','resource-search','global-search'].includes(e.target.id)){state.search=e.target.value;var id=e.target.id==='home-search'?'global-search':e.target.id,pos=e.target.selectionStart;if(e.target.id==='home-search')state.page='search';render();var newInput=document.getElementById(id);if(newInput){newInput.focus();newInput.setSelectionRange(pos,pos)}}});
 document.addEventListener('change',function(e){if(e.target.dataset.proj){state.project[e.target.dataset.proj]=e.target.dataset.proj==='problem'?Number(e.target.value):e.target.value}});
 render();
+})();
+</script><script>
+(function(){
+const key="uxui-playbook-theme";
+const root=document.documentElement;
+const button=document.getElementById("theme-toggle");
+function apply(theme){
+const dark=theme==="dark";
+root.setAttribute("data-theme",dark?"dark":"light");
+button.querySelector(".theme-label").textContent=dark?"Light Mode":"Dark Mode";
+button.setAttribute("aria-label",dark?"Bật Light Mode":"Bật Dark Mode");
+button.title=dark?"Chuyển sang giao diện sáng":"Chuyển sang giao diện tối";
+button.setAttribute("aria-pressed",String(dark));
+}
+let initial="light";
+try{initial=localStorage.getItem(key)|| (window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}
+apply(initial);
+button.addEventListener("click",function(){
+const next=root.getAttribute("data-theme")==="dark"?"light":"dark";
+apply(next);
+try{localStorage.setItem(key,next)}catch(e){}
+});
 })();
 </script></body></html>
